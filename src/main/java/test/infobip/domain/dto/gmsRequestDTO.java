@@ -10,9 +10,9 @@ public class gmsRequestDTO {
     @Getter
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class sendGmsMessageRequestDto {
+    public static class SendGmsMessageRequestDto {
         private List<MessageDto> messages;
-        private List<TopOptionDto> options;
+        //private List<TopOptionDto> options;
     }
 
     @Builder
@@ -22,7 +22,24 @@ public class gmsRequestDTO {
     public static class MessageDto {
         private String sender;
         private List<DestinationDto> destinations;
-        private List<ContentDto> contents;
+        private ContentDto content;
+        private WebhookDto webhooks;
+    }
+
+    @Builder
+    @Getter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class WebhookDto {
+        private DeliveryDto delivery;
+    }
+
+    @Builder
+    @Getter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class DeliveryDto {
+        private String url;
     }
 
     @Builder
