@@ -14,7 +14,7 @@ public class FeignClientConfig {
     @Bean
     public RequestInterceptor requestInterceptor() {
         return requestTemplate -> {
-
+            return;
         }
     }
 }
