@@ -66,7 +66,7 @@ public class InfobipService {
                 .build();
 
         gmsRequestDTO.ContentDto contentDto = gmsRequestDTO.ContentDto.builder()
-                .text("and some punctuation: !@#$%^&*().\n")
+                .text("노션노션노션 https://jungle-friday-d03.notion.site/And-1818dd1cbf4780dbba3aec18c674c71c?pvs=4")
                 //.transliteration("NONE")
                 //.language(languageDto)
                 .build();
@@ -76,25 +76,17 @@ public class InfobipService {
                 .build();
 
         destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
-        destinationDtoList.add(destinationDto);
 
         // 예약전송
         /*gmsRequestDTO.ScheduleDto scheduleDto = gmsRequestDTO.ScheduleDto.builder()
                 .sendAt("2025-01-22T02:42:00.000+0000")
                 .build();*/
 
-        /*gmsRequestDTO.TrackingDto trackingDto = gmsRequestDTO.TrackingDto.builder()
+        gmsRequestDTO.TrackingDto trackingDto = gmsRequestDTO.TrackingDto.builder()
                 .shortenUrl(true)
-                .removeProtocol(true)
-                .customDomain("short.emfoplus.pst")
-                .build();*/
+                //.removeProtocol(true)
+                //.customDomain("short.emfoplus.pst")
+                .build();
 
         gmsRequestDTO.TopOptionDto topOptionDto = gmsRequestDTO.TopOptionDto.builder()
                 .includeSmsCountInResponse(true)
